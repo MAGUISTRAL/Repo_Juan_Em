@@ -1,5 +1,14 @@
+def half_pyramid(chiffre)
+	for i in 1..chiffre
+	(chiffre-i).times {print " "} 
+	i.times {print "#"}
+	print "\n"
+	i=i+1
+	end
+end
 
-def half_pyramid (chiffre)
+
+def full_pyramid (chiffre)
     n = 1
         for a in n..chiffre 
         print " " * (chiffre- a)
@@ -9,13 +18,34 @@ def half_pyramid (chiffre)
     
 end
 
+
+def wtf_pyramid(chiffre)
+puts full_pyramid((chiffre+1)/2)
+	n = 2
+	  for i in 1..(chiffre-1)/2
+	  print " " * i
+	  puts "#" *(chiffre-n)
+	   n += 2
+	  end
+end
+
+
+
 puts "Choisis un chiffre"
 chiffre=gets.chomp.to_i
-while chiffre < 1 || chiffre>25
-puts "Choisis un chiffre entre 1 et 25"
-chiffre=gets.chomp.to_i
-end
 puts half_pyramid (chiffre)
+
+
+puts "Choisis un chiffre"
+chiffre=gets.chomp.to_i
+	while chiffre%2 == 0
+	puts "Choisis un chiffre impair"
+	chiffre=gets.chomp.to_i
+	end
+puts wtf_pyramid (chiffre)
+
+
+
 
 
 
