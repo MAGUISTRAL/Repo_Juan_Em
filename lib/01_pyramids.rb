@@ -37,6 +37,11 @@ half_pyramid (chiffre)
 
 puts "Choisis un chiffre"
 chiffre=gets.chomp.to_i
+full_pyramid(chiffre)
+
+
+puts "Choisis un chiffre"
+chiffre=gets.chomp.to_i
 	while chiffre%2 == 0
 	puts "Choisis un chiffre impair"
 	chiffre=gets.chomp.to_i
