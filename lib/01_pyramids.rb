@@ -1,8 +1,8 @@
 
 def half_pyramid (chiffre)
     n = 1
-        for i in 1..chiffre 
-        print " " * (chiffre- i)
+        for a in n..chiffre 
+        print " " * (chiffre- a)
         puts  "#" * n 
         n += 2
         end
@@ -16,6 +16,7 @@ puts "Choisis un chiffre entre 1 et 25"
 chiffre=gets.chomp.to_i
 end
 puts half_pyramid (chiffre)
+
 
 
 
