@@ -10,8 +10,8 @@ end
 
 def full_pyramid (chiffre)
     n = 1
-        for i in 1..chiffre 
-        print " " * (chiffre- i)
+        for a in n..chiffre 
+        print " " * (chiffre- a)
         puts  "#" * n 
         n += 2
         end
@@ -42,6 +42,7 @@ chiffre=gets.chomp.to_i
 	chiffre=gets.chomp.to_i
 	end
 wtf_pyramid (chiffre)
+
 
 
 
