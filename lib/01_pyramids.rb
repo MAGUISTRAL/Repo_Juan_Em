@@ -20,7 +20,7 @@ end
 
 
 def wtf_pyramid(chiffre)
-puts full_pyramid((chiffre+1)/2)
+full_pyramid((chiffre+1)/2)
 	n = 2
 	  for i in 1..(chiffre-1)/2
 	  print " " * i
@@ -30,10 +30,9 @@ puts full_pyramid((chiffre+1)/2)
 end
 
 
-
 puts "Choisis un chiffre"
 chiffre=gets.chomp.to_i
-puts half_pyramid (chiffre)
+half_pyramid (chiffre)
 
 
 puts "Choisis un chiffre"
@@ -42,7 +41,7 @@ chiffre=gets.chomp.to_i
 	puts "Choisis un chiffre impair"
 	chiffre=gets.chomp.to_i
 	end
-puts wtf_pyramid (chiffre)
+wtf_pyramid (chiffre)
 
 
 
